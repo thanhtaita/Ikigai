@@ -1,11 +1,143 @@
-.title {
-  text-align: center;
+/* 
+--- 01 TYPOGRAPHY SYSTEM 
+-Font styles
+
+- Font sizes (px) 
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
++20
+
+- Font weights
+
+- Line heights
+
+- Letter spacing
+
+--- 02 COLORS
+
+
+- Tints:
+
+#f1f3f5
+#e9ecef
+#adb5bd
+
+- Shades: 
+#343a40
+
+- Accents:
+
+- Greys
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 300;
 }
 
-.title-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 50%;
+html {
+  /* change default 1rem = 16px to 1rem = 10rem for calculating easier */
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  background-color: #343a40;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 2rem 30rem;
+}
+
+.main-nav-link {
+  color: #e9ecef;
+  font-size: 2rem;
+}
+
+.hero-section {
+  margin: 4rem 0rem 0rem 0rem;
+}
+.hero-content {
+  background-color: #f1f3f5;
+  display: flex;
+  padding: 2rem 2rem;
+  margin: 2rem 30rem 0rem 30rem;
+  border-radius: 1rem;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-primary {
+  font-size: 10rem;
+  letter-spacing: -0.5rem;
+  line-height: 10rem;
+}
+
+.hero-abstract {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.hero-img {
+  width: 38rem;
+  border-radius: 2rem;
+}
+
+.definition {
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0rem 2rem 8rem 2rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.158);
+}
+
+.definition-title {
+  width: 50rem;
+}
+
+.definition-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.definition-header {
+  font-size: 7rem;
+}
+
+.definition-info {
+  width: 80rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.ikigai-diagram {
+  background: url(./img/ikigai.jpg) fixed;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: 15vw;
+  font-size: 40rem;
+  color: transparent;
 }
